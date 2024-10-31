@@ -1,0 +1,49 @@
+body {
+    background-color: #F363B5;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+form {
+    background-color: #F4CBF9;
+    margin: 20px auto;
+    width: 80vw;  
+    padding: 20px;
+    color: #99004C;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+h1, p {
+    text-align: center;
+}
+input, select, textarea {
+    width: 100%;
+    min-height: 2em;
+}
+textarea {
+    padding: none;
+}
+fieldset {
+    border: none;
+}
+.inline {
+    width: unset;
+    margin: 0;
+    vertical-align: middle;
+}
+.valores {
+    color: #4E434A;
+}
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFCCE5;
+    color: #99004C;
+    font-size: 1.2em;
+    border-color: #99004C;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Encuesta curso de crochet</h1>
+        <p id="description">Gracias por participar en esta encuesta para mejorar los cursos de crochet</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Nombre:
+                    <input type="text" id="name" required placeholder="Escribe tu nombre">
+                </label>
+                <label for="email" id="email-label">Email:
+                    <input type="email" id="email" required placeholder="Escribe tu email">
+                </label>
+                <label for="number" id="number-label">Edad:
+                    <input id="number" type="number" required min="10" max="80" placeholder="Tu edad">
+                </label>
+                <label for="dropdown">¿Por qué deseas aprender crochet?
+                    <select id="dropdown">
+                        <option value="">(Seleccione una opción)</option>
+                        <option value="emprendimiento">Emprendimiento</option>
+                        <option value="gusto">Por gusto</option>
+                        <option value="desestreza">Me desestreza</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>¿Cuánto estarías dispuesto a pagar por un curso de crochet?</label>
+                <label for="opcion1" class="valores">
+                    <input type="radio" id="opcion1" name="costo" value="menos_50" class="inline"> Menos de $50.000
+                </label>
+                <label for="opcion2" class="valores">
+                    <input type="radio" id="opcion2" name="costo" value="menos_100" class="inline"> Entre $50.000 y $100.000
+                </label>
+                <label for="opcion3" class="valores">
+                    <input type="radio" id="opcion3" name="costo" value="mas_de_100" class="inline"> Más de $100.000
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>¿Qué deseas aprender en el curso? (selecciona las que correspondan)</label>
+                <label for="check1" class="valores"><input type="checkbox" value="bolsos" class="inline" id="check1"> Tejer bolsos</label>
+                <label for="check2" class="valores"><input type="checkbox" value="vestidos" class="inline" id="check2"> Tejer vestidos</label>
+                <label for="check3" class="valores"><input type="checkbox" value="aretes" class="inline" id="check3"> Hacer aretes</label>
+                <label for="check4" class="valores"><input type="checkbox" value="punto_de_cruz" class="inline" id="check4"> Punto de cruz</label>
+                <label for="check5" class="valores"><input type="checkbox" value="amigurumi" class="inline" id="check5"> Amigurumi</label>
+                <label for="check6" class="valores"><input type="checkbox" value="agujas" class="inline" id="check6"> Uso de agujas e hilos</label>
+            </fieldset>
+            <fieldset>
+                <label>¿Tienes alguna sugerencia para el curso?</label>
+                <textarea id="textarea" rows="10" cols="30" placeholder="Me encantaría que los cursos..."></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </body>
+</html>
